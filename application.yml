@@ -1,0 +1,17 @@
+# 注意: 注意此文件需要保存为UTF-8 unix 格式，否则GG
+
+spring:
+    profiles:
+      active:
+      - dev
+---
+spring:
+    profiles: dev       # 开发环境
+    application: 
+        name: msc-config-dev
+---
+spring:
+    profiles: test      # 测试环境
+    application:
+        name: msc-config-test
+      
