@@ -8,7 +8,7 @@ server:
 spring:
   profiles: dev
   application:
-    name: msc-config-client-${spring.profiles}-${server.port}
+    name: msc-config-client-${spring.profiles}-${server.port}-chennan
 eureka:
   client:
     service-url:
