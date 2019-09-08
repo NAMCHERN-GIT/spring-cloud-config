@@ -1,0 +1,35 @@
+spring:
+  profiles:
+    active:
+      - dev
+---
+server:
+  port: 8201
+spring:
+  profiles: dev
+  application:
+    name: msc-config-client
+eureka:
+  client:
+    service-url:
+      defaultZone:
+        # defaultZone: http://msc-eureka-server:7001/eureka/
+        # defaultZone: http://local-eureka-server:7001/eureka/            # Eureka注册中心地址
+        # defaultZone: http://msc-eureka-server-1:7001/eureka/,http://msc-eureka-server-2:7002/eureka/,http://msc-eureka-server-3:7003/eureka/
+        defaultZone: http://local-eureka-server-1:7001/eureka/
+---
+server:
+  port: 8202
+spring:
+  profiles: test
+  application:
+    name: msc-config-client
+eureka:
+  client:
+    service-url:
+      defaultZone:
+        # defaultZone: http://msc-eureka-server:7001/eureka/
+        # defaultZone: http://local-eureka-server:7001/eureka/            # Eureka注册中心地址
+        # defaultZone: http://msc-eureka-server-1:7001/eureka/,http://msc-eureka-server-2:7002/eureka/,http://msc-eureka-server-3:7003/eureka/
+        defaultZone: http://local-eureka-server-2:7002/eureka/
+
