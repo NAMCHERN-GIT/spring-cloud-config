@@ -4,11 +4,11 @@ spring:
       - dev
 ---
 server:
-  port: 8201
+  port: 3355
 spring:
   profiles: dev
   application:
-    name: msc-config-client
+    name: msc-config-client-${spring.profiles}-${server.port}
 eureka:
   client:
     service-url:
@@ -18,11 +18,11 @@ eureka:
       defaultZone: http://local-eureka-server-1:7001/eureka/
 ---
 server:
-  port: 8202
+  port: 3356
 spring:
   profiles: test
   application:
-    name: msc-config-client
+    name: msc-config-client-${spring.profiles}-${server.port}
 eureka:
   client:
     service-url:
