@@ -4,11 +4,11 @@ spring:
       - dev
 ---
 #server:
-#  port: 3356
+#  port: 3355
 spring:
   profiles: dev
   application:
-    name: msc-config-client-${spring.profiles}-${server.port}
+    name: msc-config-client-${spring.profiles}-3355
 eureka:
   client:
     service-url:
