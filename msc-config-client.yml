@@ -16,7 +16,7 @@ eureka:
       # defaultZone: http://local-eureka-server:7001/eureka/            # Eureka注册中心地址
       # defaultZone: http://msc-eureka-server-1:7001/eureka/,http://msc-eureka-server-2:7002/eureka/,http://msc-eureka-server-3:7003/eureka/
       defaultZone: http://local-eureka-server-1:7001/eureka/
-msc-name: dev-msc-xixi
+msc-name: dev-msc-alibaba
 ---
 server:
   port: 3356
